@@ -10,14 +10,19 @@ vim.opt.shiftwidth = 2
 
 vim.opt.laststatus = 3
 
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+
 -- Keybindings
 vim.api.nvim_set_keymap("n", "y", '"+y', { noremap = true })
 vim.api.nvim_set_keymap("v", "y", '"+y', { noremap = true })
 vim.api.nvim_set_keymap("n", "p", '"+p', { noremap = true })
 vim.api.nvim_set_keymap("v", "p", '"+p', { noremap = true })
 
-vim.api.nvim_set_keymap("n", "dd", '"+dd', { noremap = true })
-vim.api.nvim_set_keymap("v", "dd", '"+dd', { noremap = true })
+-- vim.api.nvim_set_keymap("n", "dd", '"+dd', { noremap = true })
+-- vim.api.nvim_set_keymap("v", "dd", '"+dd', { noremap = true })
 
 -- Bind change to discard the content
 vim.api.nvim_set_keymap("n", "c", '"_c', { noremap = true })

@@ -1,6 +1,6 @@
 local builtin = require('telescope.builtin')
 
-local sorters = require "telescope.sorters"
+-- local sorters = require "telescope.sorters"
 local map_tele = require "tsubo.telescope.mappings"
 
 -- Dotfiles
@@ -11,8 +11,8 @@ map_tele("<leader>ez", "edit_zsh")
 map_tele("<leader>ft", "git_files")
 map_tele("<leader>o", "find_files")
 vim.api.nvim_set_keymap("n", "<space>fe",
-                        ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-                        {noremap = true})
+	":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+	{ noremap = true })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 
 --
