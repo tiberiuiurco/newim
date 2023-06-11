@@ -27,3 +27,5 @@ vim.api.nvim_set_keymap("v", "p", '"+p', { noremap = true })
 -- Bind change to discard the content
 vim.api.nvim_set_keymap("n", "c", '"_c', { noremap = true })
 vim.api.nvim_set_keymap("v", "c", '"_c', { noremap = true })
+
+vim.opt.cursorline = true
