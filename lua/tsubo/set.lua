@@ -17,7 +17,7 @@ vim.opt.undofile = true
 
 -- Keybindings
 vim.api.nvim_set_keymap("n", "y", '"+y', { noremap = true })
-vim.api.nvim_set_keymap("v", "y", '"+y', { noremap = true })
+vim.api.nvim_set_keymap("v", "y", '"+ygv<Esc>', { noremap = true })
 vim.api.nvim_set_keymap("n", "p", '"+p', { noremap = true })
 vim.api.nvim_set_keymap("v", "p", '"+p', { noremap = true })
 
