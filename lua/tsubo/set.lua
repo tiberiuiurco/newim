@@ -30,5 +30,6 @@ vim.api.nvim_set_keymap("v", "c", '"_c', { noremap = true })
 
 -- ESC
 vim.api.nvim_set_keymap("i", "jk", '<ESC>', { noremap = true })
+vim.api.nvim_set_keymap("i", "jj", '<ESC>caw', { noremap=true })
 
 vim.opt.cursorline = true
