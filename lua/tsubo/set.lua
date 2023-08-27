@@ -16,13 +16,14 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 -- Keybindings
-vim.api.nvim_set_keymap("n", "y", '"+y', { noremap = true })
-vim.api.nvim_set_keymap("v", "y", '"+ygv<Esc>', { noremap = true })
+-- vim.api.nvim_set_keymap("n", "y", 'y', { noremap = true })
+vim.api.nvim_set_keymap("n", "c-y", '"+y', { noremap = true })
+-- vim.api.nvim_set_keymap("v", "y", '"+ygv<Esc>', { noremap = true })
 vim.api.nvim_set_keymap("n", "p", '"+p', { noremap = true })
 vim.api.nvim_set_keymap("v", "p", '"+p', { noremap = true })
 
--- vim.api.nvim_set_keymap("n", "dd", '"+dd', { noremap = true })
--- vim.api.nvim_set_keymap("v", "dd", '"+dd', { noremap = true })
+vim.api.nvim_set_keymap("n", "dd", '"+dd', { noremap = true })
+vim.api.nvim_set_keymap("v", "dd", '"+dd', { noremap = true })
 
 -- Bind change to discard the content
 vim.api.nvim_set_keymap("n", "c", '"_c', { noremap = true })
@@ -33,3 +34,6 @@ vim.api.nvim_set_keymap("i", "jk", '<ESC>', { noremap = true })
 vim.api.nvim_set_keymap("i", "jj", '<ESC>caw', { noremap=true })
 
 vim.opt.cursorline = true
+
+-- vim.api.nvim_set_keymap("n", "<F8>", '<CMD>lua require"runny.utils".get_bufnr()<CR>', { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<F4>", '<CMD>lua require"runny.cpp".cNr()<CR>', { noremap = true })

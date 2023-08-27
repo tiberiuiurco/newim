@@ -41,7 +41,7 @@ return {
             min_count_to_highlight = 1
         })
         vim.cmd("hi def IlluminatedWordText gui=underline")
-vim.api.nvim_set_keymap("n", "in", "<cmd>lua require('illuminate').goto_next_reference()<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "ip", "<cmd>lua require('illuminate').goto_prev_reference()<CR>", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "in", "<cmd>lua require('illuminate').goto_next_reference()<CR>", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "ip", "<cmd>lua require('illuminate').goto_prev_reference()<CR>", { noremap = true })
     end
 }
