@@ -1,1 +1,1 @@
-return {{dir = "/home/tsubo/plugins/runny.nvim"}}
+return {{dir = "/home/cozo/plugins/runny.nvim"}}

@@ -41,7 +41,7 @@ local _ = require("nvim-treesitter.configs").setup {
         "query", "rust", "toml", "tsx", "typescript", "vim", "org"
     },
 
-    highlight = {enable = true},
+    -- highlight = {enable = true},
 
     refactor = {
         highlight_definitions = {enable = true},
