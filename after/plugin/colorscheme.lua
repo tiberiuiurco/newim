@@ -6,7 +6,8 @@ vim.opt.termguicolors = true
 
 rawset(require("colorbuddy").styles, "italic", require("colorbuddy").styles.none)
 
-require("colorbuddy").colorscheme("kanagawa")
+-- require("colorbuddy").colorscheme("kanagawa")
+vim.cmd [[colorscheme kanagawa]]
 
 -- require("colorbuddy").colorscheme("vscode")
 require("colorizer").setup()

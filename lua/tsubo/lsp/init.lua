@@ -127,7 +127,7 @@ require('lspconfig')['lua_ls'].setup {
 		}
 	}
 }
-require('lspconfig')['tsserver'].setup {
+require('lspconfig')['ts_ls'].setup {
 	capabilities = capabilities,
 	on_attach = on_attach
 }
@@ -169,4 +169,4 @@ require('lspconfig')['angularls'].setup({
 require("mason").setup()
 require("mason-lspconfig").setup {}
 
-require("colorbuddy").colorscheme("gruvbuddy")
+require("colorbuddy").colorscheme("kanagawa")
