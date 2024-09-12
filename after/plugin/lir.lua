@@ -45,7 +45,7 @@ require("lir.git_status").setup {
   show_ignored = false,
 }
 
-vim.api.nvim_set_keymap("n", "-", ":edit %:h<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "-", "<CMD>Oil<CR>", { noremap = true })
 
 -- Can do this if we want to get particular settings
 -- vim.cmd [[
